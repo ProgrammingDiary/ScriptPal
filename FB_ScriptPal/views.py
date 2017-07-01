@@ -20,7 +20,7 @@ def home(request):
 
 class BotView(generic.View):
     def get(self, request, *args, **kwargs):
-        if self.request.GET['hub.verify_token'] == '709337517':
+        if self.request.GET['hub.verify_token'] == 'scriptpalrocks':
             return HttpResponse(self.request.GET['hub.challenge'])
         else:
             return HttpResponse('Error, invalid token')
