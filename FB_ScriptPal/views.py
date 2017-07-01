@@ -11,11 +11,7 @@ from django.views import generic
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
-<<<<<<< HEAD
 import json, pprint
-=======
-import json
->>>>>>> 18a4b900d6dd707e478614eb5ddecab02129b921
 
 #ai = apiai.ApiAI('f97f736a12164e548a3b33a90b2dfe0e')
 
