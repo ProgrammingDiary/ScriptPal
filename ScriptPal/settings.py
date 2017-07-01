@@ -25,8 +25,7 @@ SECRET_KEY = 'un%^ult_#=ouwg3z-e5k1lv%%_(mpx(3y^-h8vm27w3og#&)fn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'scriptpal.herokuapp.com']
 
 # Application definition
 
