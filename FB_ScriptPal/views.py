@@ -12,10 +12,9 @@ from django.views import generic
 def home(request):
 	return HttpResponse("Hello world.")
 
-class BotView(generic.View):
-    def get(self, request, *args, **kwargs):
-        if self.request.GET['hub.verify_token'] == '709337517':
-            return HttpResponse(self.request.GET['hub.challenge'])
-        else:
-            return HttpResponse('Error, invalid token')
+def BotView(request):
+	if request.GET['hub.verify_token'] == '709337517':
+		return HttpResponse(request.GET['hub.challenge'])
+	else:
+		return HttpResponse('Error, invalid token')
 
