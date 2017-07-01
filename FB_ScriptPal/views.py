@@ -6,12 +6,12 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 from django.views import generic
-import apiai
+#import apiai
 
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
-ai = apiai.ApiAI('f97f736a12164e548a3b33a90b2dfe0e')
+#ai = apiai.ApiAI('f97f736a12164e548a3b33a90b2dfe0e')
 
 # Create your views here.
 
@@ -20,7 +20,7 @@ def home(request):
 
 class BotView(generic.View):
     def get(self, request, *args, **kwargs):
-        if self.request.GET['hub.verify_token'] == '709337517':
+        if self.request.GET['hub.verify_token'] == 'scriptpalrocks':
             return HttpResponse(self.request.GET['hub.challenge'])
         else:
             return HttpResponse('Error, invalid token')
