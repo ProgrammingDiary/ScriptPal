@@ -25,7 +25,7 @@ SECRET_KEY = 'un%^ult_#=ouwg3z-e5k1lv%%_(mpx(3y^-h8vm27w3og#&)fn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'scriptpal.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'scriptpal.herokuapp.com', 'c608f54e.ngrok.io']
 
 # Application definition
 
@@ -118,3 +118,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+CLIENT_ACCESS_TOKEN = 'f97f736a12164e548a3b33a90b2dfe0e'
+
+ACCESS_TOKEN = 'EAABozjY7nEwBALs1BciZAH751IBe0KhlLjAg137EYW8tEcyHPz0kQ6GlhRNqyOdr1LRNN38TNlZBidnuhZCgR8VjEVr0HdfQxRsVVLSzC3jNpcPEZAarDlDZCMmfZCNHX2wc70v2qZANGPVxSpWM4QGzg1XB1njzuLrbC9jMevrtnFuTelmNk2W'
+
