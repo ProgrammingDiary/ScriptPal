@@ -11,6 +11,8 @@ from django.views import generic
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
+import json
+
 #ai = apiai.ApiAI('f97f736a12164e548a3b33a90b2dfe0e')
 
 # Create your views here.
