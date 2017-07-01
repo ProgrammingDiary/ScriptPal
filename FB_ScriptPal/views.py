@@ -42,6 +42,3 @@ class BotView(generic.View):
                     # Print the message to the terminal
                     pprint(message)     
         return HttpResponse()
-
-
-
